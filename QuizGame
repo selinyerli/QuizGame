@@ -1,24 +1,24 @@
 
 questions = [
-
+    
 {
     "prompt": "Which actor starred as the main character in the Pirates of the Caribbean series?",
     "options": ["A)Orlando Bloom", "B)Johnny Depp", "C)Brad Pitt", "D)Matthew McConaughey"],
-    "answer": "A"
+    "answer": "B"
 
-}
+},
 
 {
     "prompt": "Who painted the Mona Lisa?",
     "options": ["A)Pablo Picasso", "B)Leonardo da Vinci", "C)Vincent van Gogh", "D)Claude Monet"],
     "answer": "B"
-}
+},
 
 {
   "prompt": "What is the capital city of France?",
   "options": ["A)London", "B)Berlin", "C)Paris", "D)Madrid"],
   "answer": "C"
-}
+},
 
 {
   "prompt": "What was the first animated feature film released by Disney?",
@@ -27,3 +27,22 @@ questions = [
 }
 
 ]
+
+def run_quiz(questions):
+    score= 0
+    for question in questions:
+        print(question["prompt"])
+        for option in question["options"]:
+            print(option)
+        answer = input("Enter your answer (A, B, C or D): ").upper()
+        if answer == question["answer"]:
+            print("Correct!\n")
+            score += 1
+        else:
+            print("Wrong! The correct answer was", question["answer"], "\n")
+
+
+    print(f"You got {score} out of {len(questions)} questions correct.")       
+
+
+run_quiz(questions)       
