@@ -1,0 +1,29 @@
+
+questions = [
+
+{
+    "prompt": "Which actor starred as the main character in the Pirates of the Caribbean series?",
+    "options": ["A)Orlando Bloom", "B)Johnny Depp", "C)Brad Pitt", "D)Matthew McConaughey"],
+    "answer": "A"
+
+}
+
+{
+    "prompt": "Who painted the Mona Lisa?",
+    "options": ["A)Pablo Picasso", "B)Leonardo da Vinci", "C)Vincent van Gogh", "D)Claude Monet"],
+    "answer": "B"
+}
+
+{
+  "prompt": "What is the capital city of France?",
+  "options": ["A)London", "B)Berlin", "C)Paris", "D)Madrid"],
+  "answer": "C"
+}
+
+{
+  "prompt": "What was the first animated feature film released by Disney?",
+  "options": ["A)Sleeping Beauty", "B)Cinderella", "C)Snow White and the Seven Dwarfs", "D)Pinocchio"],
+  "answer": "C"
+}
+
+]
